@@ -9,6 +9,7 @@
 ## Table of Contents
 
 - [Usage with CDN Link](#usage-with-CDN-links)
+- [Properties](#properties)
   - [Access Tokens](#access-tokens)
   - [Meeting Destinations](#meeting-destinations)
   - [Theme](#theme)
@@ -34,19 +35,22 @@ Using our CDN requires the least amount of work to get started. Add the followin
 ```
 You can then instantiate the widget by providing the following parameters:
 
-```
+```html
 <div id="meeting-widget"></div>
 
   <script>
-  webexMeetingWidget({accesstoken: "ACCESS_TOKEN",
-      destination: "MEETING_DESTINATION",
+  webexMeetingWidget({accessToken: "ACCESS_TOKEN",
+      meetingDestination: "MEETING_DESTINATION",
       theme:"THEME",
       layout:"LAYOUT",
+      width:"WIDTH",
+      height:"HEIGHT",
       inMeetingControls:['IN_MEETING_CONTROL1','IN_MEETING_CONTROL2',...],
-      notJoinedControls:['NOT_JOINED_CONTROL1','NOT_JOINED_CONTROL2',...]});
-</script>
+      interstitialControls:['NOT_JOINED_CONTROL1','NOT_JOINED_CONTROL2',...]});
+  </script>
 ```
 
+## Properties
 
 ### Access Tokens
 
@@ -70,6 +74,8 @@ Developers can choose how widget should look based on following themes:
   * Use `theme="dark"` as prop value in Meetings widget.
 * Light theme:
   * Use `theme="light"` as prop value in Meetings widget.
+
+And if no theme is choosed it selects the browser's theme by default.
 
 ### Remote Video Layout
 
@@ -109,12 +115,22 @@ All other participants are not displayed until they speak, who then would take o
 
 Use `layout="focus"` as prop value in Meetings widget.
 
+### Layout Styles
+
+#### Width
+
+The minimum width is set to 700px. Any width modifications above the minimum width will be applied.
+
+#### Height
+
+The minimum heoght is set to 500px. Any height modifications above the minimum height will be applied.
+
 ### Customize Meeting Controls
 
 Developers can customize the meeting controls used by the Meetings widget.
 The Webex Meetings Widget takes an optional function to specify a custom list of controls for a meeting and an optional range to specify which controls can be collapsed if not enough space is available.
 
-#### Meeting Controls when In Meeting
+#### Meeting Controls when In Meeting (inMeetingControls)
 
   * `mute-audio`
   * `mute-video`
@@ -123,7 +139,7 @@ The Webex Meetings Widget takes an optional function to specify a custom list of
   * `settings`
   * `leave-meeting`
  
-#### Meeting Controls when Not Joined yet
+#### Meeting Controls when Not Joined yet (interstitialControls)
 
   * `mute-audio`
   * `mute-video`
