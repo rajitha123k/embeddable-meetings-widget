@@ -75,7 +75,7 @@ Developers can choose how widget should look based on following themes:
 * Light theme:
   * Use `theme="light"` as prop value in Meetings widget.
 
-And if no theme is choosed it selects the browser's theme by default.
+And if no theme is chosen it selects the browser's theme by default.
 
 ### Remote Video Layout
 
