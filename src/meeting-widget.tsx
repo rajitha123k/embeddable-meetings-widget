@@ -7,41 +7,39 @@ import './meeting-widget.css';
 
 
 function MeetingWidget(props) {
-  var myControls=null;
-  if(props.inMeetingControls && props.notJoinedControls)
+  var controls=null;
+  var Widgetprops=null;
+  if(props.inMeetingControls && props.interstitialControls)
   {
-    myControls = (inMeeting) => inMeeting ? props.inMeetingControls : props.notJoinedControls;
+    controls = (inMeeting) => inMeeting ? props.inMeetingControls : props.interstitialControls;
   }
-  else if(props.inMeetingControls && !props.notJoinedControls)
+  else if(props.inMeetingControls && !props.interstitialControls)
   {
-    myControls = (inMeeting) => inMeeting ? ['mute-audio','mute-video','share-screen','member-roster','settings','leave-meeting'] : props.notJoinedControls;
+    controls = (inMeeting) => inMeeting ? ['mute-audio','mute-video','share-screen','member-roster','settings','leave-meeting'] : props.interstitialControls;
   }
-  else if(!props.inMeetingControls && props.notJoinedControls)
+  else if(!props.inMeetingControls && props.interstitialControls)
   {
-    myControls = (inMeeting) => inMeeting ? props.inMeetingControls : ['mute-audio','mute-video','settings','join-meeting'];
+    controls = (inMeeting) => inMeeting ? props.inMeetingControls : ['mute-audio','mute-video','settings','join-meeting'];
   }
   else{
-    myControls = (inMeeting) => inMeeting ? ['mute-audio','mute-video','share-screen','member-roster','settings','leave-meeting'] : ['mute-audio','mute-video','settings','join-meeting'];
+    controls = (inMeeting) => inMeeting ? ['mute-audio','mute-video','share-screen','member-roster','settings','leave-meeting'] : ['mute-audio','mute-video','settings','join-meeting'];
   }
-  console.log('props',props);
-  const  accesstoken  = props.accesstoken;
-  const destination =props.destination;
-  const theme=props.theme;
-  const layout=props.layout;
-  console.log('accesstoken',accesstoken);
-  console.log('destination',destination);
-  console.log('theme',theme);
-  return (
+  var className=props.theme=="dark"?"webex-meeting-widget-demo wxc-theme-dark":props.theme=="light"?"webex-meeting-widget-demo wxc-theme-light":null;
+  if(props.theme==null)
+  {
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (darkThemeMq.matches) {
+      className="webex-meeting-widget-demo wxc-theme-dark";
+    } else {
+      className="webex-meeting-widget-demo wxc-theme-light";
+    }
     
+  }
+  Widgetprops={...props,controls,className,style:{width:`${props.width}`,height:`${props.height}`,minWidth:"700px",minHeight:"500px"}};
+  return (
     <div className="WebexMeeting">
         { 
-            <WebexMeetingsWidget
-            style={{width: "1000px", height: "500px"}}
-            accessToken= {accesstoken}
-            meetingDestination= {destination}
-            className={`webex-meeting-widget-demo wxc-theme-${theme}`}
-            layout={layout}
-            controls={myControls}
+            <WebexMeetingsWidget{...Widgetprops}
           />
         }
     </div>
