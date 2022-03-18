@@ -9,12 +9,14 @@
     <div id="meeting-widget"></div>
 
   <script>
-  webexMeetingWidget({accesstoken: "ACCESS_TOKEN",
-      destination: "MEETING_DESTINATION",
+  webexMeetingWidget({accessToken: "ACCESS_TOKEN",
+      meetingDestination: "MEETING_DESTINATION",
       theme:"light",
+      width:"800px",
+      height:"500px",
       layout:"Grid",
       inMeetingControls:['mute-audio','leave-meeting'],
-      notJoinedControls:['join-meeting']});
+      interstitialControls:['join-meeting']});
 </script>
   </body>
 </html>
