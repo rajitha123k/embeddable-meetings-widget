@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Webex Widget Demo</title>
+    <link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/MeetingWidget/docs/webex-widgets.css" />
+    <script src="https://cdn.jsdelivr.net/gh/WXSD-Sales/MeetingWidget/docs/bundle.js"></script>
+  </head>
+
+  <body>
+    <div id="meeting-widget"></div>
+
+  <script>
+  webexMeetingWidget({accesstoken: "ACCESS_TOKEN",
+      destination: "MEETING_DESTINATION",
+      theme:"light",
+      layout:"Grid",
+      inMeetingControls:['mute-audio','leave-meeting'],
+      notJoinedControls:['join-meeting']});
+</script>
+  </body>
+</html>
