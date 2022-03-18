@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
  import {WebexMeetingsWidget} from '@webex/widgets';
 import '@webex/widgets/dist/css/webex-widgets.css';
 import './meeting-widget.css';
+import { collapseTextChangeRangesAcrossMultipleVersions } from 'typescript';
 
 
 function MeetingWidget(props) {
@@ -35,6 +36,8 @@ function MeetingWidget(props) {
     }
     
   }
+  console.log("props",props);
+  console.log("controls",controls);
   Widgetprops={...props,controls,className,style:{width:`${props.width}`,height:`${props.height}`,minWidth:"700px",minHeight:"500px"}};
   return (
     <div className="WebexMeeting">
