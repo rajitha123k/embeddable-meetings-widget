@@ -14,11 +14,11 @@ function MeetingWidget(props) {
   {
     controls = (inMeeting) => inMeeting ? props.inMeetingControls : props.interstitialControls;
   }
-  else if(props.inMeetingControls && !props.interstitialControls)
+  else if(!props.inMeetingControls && props.interstitialControls)
   {
     controls = (inMeeting) => inMeeting ? ['mute-audio','mute-video','share-screen','member-roster','settings','leave-meeting'] : props.interstitialControls;
   }
-  else if(!props.inMeetingControls && props.interstitialControls)
+  else if(props.inMeetingControls && !props.interstitialControls)
   {
     controls = (inMeeting) => inMeeting ? props.inMeetingControls : ['mute-audio','mute-video','settings','join-meeting'];
   }
