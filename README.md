@@ -5,7 +5,7 @@
    CDN link for <a href="https://developer.webex.com/docs/widgets#meetings-widget-"><strong>Webex Meetings Widget</strong></a> allows developers to easily include Webex meetings functionality into your application.
   </p>
 </p>
-[![Meetings Widget with CDN link Video Demo](https://img.youtube.com/vi/iws4osHV42Y/0.jpg)](https://youtu.be/iws4osHV42Y, "Meetings Widget with CDN link Video Demo")
+
 
 ## Table of Contents
 
@@ -25,6 +25,11 @@
     - [Meeting Controls when Not Joined yet](#meeting-controls-when-not-joined-yet)
 - [Share screen compatible browsers](#share-screen-compatible-browsers)
 - [Contact](#contact)
+
+
+## Video Demo
+
+[![Meetings Widget with CDN link Video Demo](https://i9.ytimg.com/vi/clXqUCYBJnA/mq2.jpg?sqp=CLiZiJIG&rs=AOn4CLC9AxUqO2K25xkTdsbXAbN0dJBePA)](https://youtu.be/clXqUCYBJnA, "Meetings Widget with CDN link Video Demo")
 
 ## Usage with CDN Links
 
