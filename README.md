@@ -9,6 +9,7 @@
 
 ## Table of Contents
 
+- [Video Demo](#video-demo)
 - [Usage with CDN Link](#usage-with-CDN-links)
 - [Properties](#properties)
   - [Access Tokens](#access-tokens)
