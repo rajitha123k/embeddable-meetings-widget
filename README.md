@@ -37,23 +37,22 @@
 Using our CDN requires the least amount of work to get started. Add the following into your HTML file in the head section:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/MeetingWidget/docs/webex-widgets.css" />
-<script src="https://cdn.jsdelivr.net/gh/WXSD-Sales/MeetingWidget/docs/bundle.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/webex-widgets.css" />
+<script src="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/bundle.js"></script>
 ```
 You can then instantiate the widget by providing the following parameters:
 
 ```html
-<div id="meeting-widget"></div>
-
+<div id="embeddable-meetings-widget"></div>
   <script>
-  webexMeetingWidget({accessToken: "ACCESS_TOKEN",
-      meetingDestination: "MEETING_DESTINATION",
-      theme:"THEME",
-      layout:"LAYOUT",
-      width:"WIDTH",
-      height:"HEIGHT",
-      inMeetingControls:['IN_MEETING_CONTROL1','IN_MEETING_CONTROL2',...],
-      interstitialControls:['NOT_JOINED_CONTROL1','NOT_JOINED_CONTROL2',...]});
+  webexMeetingsWidget({accessToken: "ACCESS_TOKEN",
+      meetingDestination: "MEETINGS_DESTINATION",
+      theme:"light",
+      width:"800px",
+      height:"500px",
+      layout:"Grid",
+      inMeetingControls:['mute-audio','leave-meeting'],
+      interstitialControls:['join-meeting']});
   </script>
 ```
 
