@@ -1,8 +1,22 @@
-<html><head><title>Webex Widget Demo</title><link href="./node_modules/@webex/widgets/dist/css/webex-widgets.css"/><script defer="defer" src="bundle.js"></script></head><body><div id="meeting-widget"></div><script src="bundle.js"></script><script>webexMeetingWidget({accessToken: "Y2JiMmZjOWYtZTE0NC00ZTAyLWE0ZDQtMGQ0YzlmMDFlYWUyZjZhNzhkYjQtMTA3_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f",
+<html>
+  <head>
+    <title>Webex Widget Demo</title>
+    <link href="./node_modules/@webex/widgets/dist/css/webex-widgets.css" />
+    
+  </head>
+
+  <body>
+    <div id="embeddable-meetings-widget"></div>
+  <script src="bundle.js"></script>
+  <script>
+  webexMeetingsWidget({accessToken: "ODMzOGRmNDUtY2JiZS00N2MwLTgxYjYtMWFmYWJkNDAzZjc0NTUxNmY4M2UtYjRm_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f",
       meetingDestination: "https://meet7.webex.com/meet/pr1327211228",
       theme:"light",
       width:"800px",
       height:"500px",
       layout:"Grid",
       inMeetingControls:['mute-audio','leave-meeting'],
-      interstitialControls:['join-meeting']});</script></body></html>
+      interstitialControls:['join-meeting']});
+</script>
+  </body>
+</html>
