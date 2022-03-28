@@ -5,9 +5,11 @@
    CDN link for <a href="https://developer.webex.com/docs/widgets#meetings-widget-"><strong>Webex Meetings Widget</strong></a> allows developers to easily include Webex meetings functionality into your application.
   </p>
   
-  <embed src="https://youtu.be/clXqUCYBJnA"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
+  <iframe width="560" height="315"
+src="https://youtu.be/clXqUCYBJnA" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </p>
 
 
