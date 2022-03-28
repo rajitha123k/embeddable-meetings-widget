@@ -2,7 +2,7 @@
   <h2 align="center">Webex Meetings Widget with CDN link</h2>
 
   <p align="center">
-   CDN link for [Webex Meetings Widget](https://developer.webex.com/docs/widgets#meetings-widget-) allows developers to easily include Webex meetings functionality into your application.
+   CDN link for [Webex Meetings Widget](https://developer.webex.com/docs/widgets) allows developers to easily include Webex meetings functionality into your application.
   </p>
 </p>
 
