@@ -29,7 +29,7 @@
 
 ## Video Demo
 
-[![Meetings Widget with CDN link Video Demo](https://i9.ytimg.com/vi/clXqUCYBJnA/mq2.jpg?sqp=CLiZiJIG&rs=AOn4CLC9AxUqO2K25xkTdsbXAbN0dJBePA)](https://youtu.be/clXqUCYBJnA, "Meetings Widget with CDN link Video Demo")
+[![Meetings Widget with CDN link Video Demo](https://i9.ytimg.com/vi_webp/clXqUCYBJnA/mqdefault.webp?v=62420ea7&sqp=COSbiJIG&rs=AOn4CLB9VCPhQdwbooXHq2cwA4Ed8l4CQQ)](https://youtu.be/clXqUCYBJnA, "Meetings Widget with CDN link Video Demo")
 
 ## Usage with CDN Links
 
