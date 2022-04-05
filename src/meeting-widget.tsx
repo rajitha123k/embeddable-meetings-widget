@@ -6,6 +6,7 @@ import '@webex/widgets/dist/css/webex-widgets.css';
 import './meeting-widget.css';
 import { collapseTextChangeRangesAcrossMultipleVersions } from 'typescript';
 
+import Draggable from 'react-draggable'; // The default
 
 function MeetingWidget(props) {
   var controls=null;
@@ -40,12 +41,14 @@ function MeetingWidget(props) {
   console.log("controls",controls);
   Widgetprops={...props,controls,className,style:{width:`${props.width}`,height:`${props.height}`,minWidth:"700px",minHeight:"500px"}};
   return (
+    <Draggable>
     <div className="WebexMeeting">
         { 
             <WebexMeetingsWidget{...Widgetprops}
           />
         }
     </div>
+    </Draggable>
   );
 }
 
