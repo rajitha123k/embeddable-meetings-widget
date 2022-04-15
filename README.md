@@ -26,7 +26,7 @@ This project enables the user to embed the webex meetings widget with just a few
 
 ## Video Demo
 
-[![Meetings Widget with CDN link Video Demo](Main_image.PNG)](https://youtu.be/clXqUCYBJnA, "Meetings Widget with CDN link Video Demo")
+[![Meetings Widget with CDN link Video Demo](assets/Main_image.PNG)](https://youtu.be/clXqUCYBJnA, "Meetings Widget with CDN link Video Demo")
 
 ## Usage with CDN Links
 
