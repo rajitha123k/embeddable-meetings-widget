@@ -34,21 +34,22 @@ Using our CDN requires the least amount of work to get started. Add the followin
 
 ```html
 <link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/webex-widgets.css" />
-<script src="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/bundle.js"></script>
+<script src="https://gitcdn.link/cdn/WXSD-Sales/embeddable-meetings-widget/main/docs/bundle.js"></script> 
 ```
 You can then instantiate the widget by providing the following parameters:
 
 ```html
 <div id="embeddable-meetings-widget"></div>
   <script>
-  webexMeetingsWidget({accessToken: "ACCESS_TOKEN",
-      meetingDestination: "MEETINGS_DESTINATION",
-      theme:"light",
-      width:"800px",
-      height:"500px",
-      layout:"Grid",
-      inMeetingControls:['mute-audio','leave-meeting'],
-      interstitialControls:['join-meeting']});
+  webexMeetingsWidget({accessToken : "ACCESS_TOKEN",
+      meetingDestination : "MEETINGS_DESTINATION",
+      theme : "light",
+      draggable : true,
+      width : "800px",
+      height : "500px",
+      layout : "Grid",
+      inMeetingControls : ['mute-audio','leave-meeting'],
+      interstitialControls : 'join-meeting']});
   </script>
 ```
 
