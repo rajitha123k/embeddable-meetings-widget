@@ -37,9 +37,9 @@ function MeetingWidget(props) {
     }
     
   }
-  console.log("props",props);
-  console.log("controls",controls);
   Widgetprops={...props,controls,className,style:{width:`${props.width}`,height:`${props.height}`,minWidth:"700px",minHeight:"500px"}};
+  if(props.draggable)
+  {
   return (
     <Draggable>
     <div className="WebexMeeting">
@@ -50,6 +50,17 @@ function MeetingWidget(props) {
     </div>
     </Draggable>
   );
+      }
+      else{
+        return (
+          <div className="WebexMeeting">
+              { 
+                  <WebexMeetingsWidget{...Widgetprops}
+                />
+              }
+          </div>
+        );
+      }
 }
 
 export default MeetingWidget ;
