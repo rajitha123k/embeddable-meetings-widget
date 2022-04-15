@@ -1,11 +1,6 @@
-<p align="center">
-  <h2 align="center">Webex Meetings Widget with CDN link</h2>
-
-  <p align="center">
-   CDN link for <a href="https://developer.webex.com/docs/widgets#meetings-widget-"><strong>Webex Meetings Widget</strong></a> allows developers to easily include Webex meetings functionality into your application.
-  </p>
-</p>
-
+# Embeddable Meeting Widget
+  
+This project enables the user to embed the webex meetings widget with just a few lines of HTML code. Before this, if the user has to embed the webex meetings widget, he was able to do it only using react code. Now we have created CDN link for <a href="https://developer.webex.com/docs/widgets#meetings-widget-"><strong>Webex Meetings Widget</strong></a> which allows developers to easily include Webex meetings functionality into your application.
 
 ## Table of Contents
 
@@ -15,6 +10,7 @@
   - [Access Tokens](#access-tokens)
   - [Meeting Destinations](#meeting-destinations)
   - [Theme](#theme)
+  - [Draggable](#draggable)
   - [Remote Video Layout](#remote-video-layout)
     - [Grid (Default)](#grid)
     - [Overlay](#overlay)
@@ -82,6 +78,13 @@ Developers can choose how widget should look based on following themes:
   * Use `theme="light"` as prop value in Meetings widget.
 
 And if no theme is chosen it selects the browser's theme by default.
+
+### Draggable
+
+Developers can choose if the widget needs to be draggable or not by setting:
+
+`draggable: true` if you want the widget to be draggable
+`draggable: false` if you want the widget in a particular place
 
 ### Remote Video Layout
 
