@@ -33,7 +33,7 @@ This project enables the user to embed the webex meetings widget with just a few
 Using our CDN requires the least amount of work to get started. Add the following into your HTML file in the head section:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/webex-widgets.css" />
+<link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/embeddable-meetings-widget/docs/webex-widgets.css" />
 <script src="https://gitcdn.link/cdn/WXSD-Sales/embeddable-meetings-widget/main/docs/bundle.js"></script> 
 ```
 You can then instantiate the widget by providing the following parameters:
