@@ -98,6 +98,8 @@ Grid layout divides remote participants in equal segments, giving visibility to 
 
 Use `layout="grid"` as prop value in Meetings widget.
 
+[![Meetings Widget with CDN link Video Demo](assets/grid.PNG)]
+
 #### Overlay
 
 Overlay layout displays the active speaker prominently, while overlaying other participants in a strip at the bottom.
