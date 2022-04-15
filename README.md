@@ -98,11 +98,15 @@ Grid layout divides remote participants in equal segments, giving visibility to 
 
 Use `layout="grid"` as prop value in Meetings widget.
 
+![grid-screenshot](assets/grid.PNG)
+
 #### Overlay
 
 Overlay layout displays the active speaker prominently, while overlaying other participants in a strip at the bottom.
 
 Use `layout="overlay"` as prop value in Meetings widget.
+
+![overlay-screenshot](assets/overlay.PNG)
 
 #### Stack
 
@@ -112,11 +116,15 @@ Stacking videos gives full visibility to everyone's video.
 
 Use `layout="stack"` as prop value in Meetings widget.
 
+![stack-screenshot](assets/stack.PNG)
+
 #### Prominent
 
 Prominent layout gives focus to the active speaker and displays other participants around this participant.
 
 Use `layout="prominent"` as prop value in Meetings widget.
+
+![prominent-screenshot](assets/prominent.PNG)
 
 #### Focus
 
@@ -124,6 +132,8 @@ Focus layout gives all visibility to the active speaker.
 All other participants are not displayed until they speak, who then would take over as active speaker.
 
 Use `layout="focus"` as prop value in Meetings widget.
+
+![focus-screenshot](assets/focus.PNG)
 
 ### Layout Styles
 
