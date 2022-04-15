@@ -1,21 +1,21 @@
 <html>
   <head>
     <title>Webex Widget Demo</title>
-    <link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/webex-widgets.css" />
-    <script src="https://cdn.jsdelivr.net/gh/WXSD-Sales/EmbeddableMeetingsWidget/docs/bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/WXSD-Sales/embeddable-meetings-widget/docs/webex-widgets.css" />
+    <script src="https://gitcdn.link/cdn/WXSD-Sales/embeddable-meetings-widget/main/docs/bundle.js"></script>   
   </head>
 
   <body>
     <div id="embeddable-meetings-widget"></div>
   <script>
-  webexMeetingsWidget({accessToken: "ACCESS_TOKEN",
-      meetingDestination: "MEETING_DESTINATION",
-      theme:"light",
+  webexMeetingsWidget({accessToken: "xxx",
+      meetingDestination: "xxx",
+      theme:"dark",
+      draggable: true,
       width:"800px",
       height:"500px",
       layout:"Grid",
-      inMeetingControls:['mute-audio','leave-meeting'],
-      interstitialControls:['join-meeting']});
+      inMeetingControls:['mute-audio','leave-meeting']});
 </script>
   </body>
 </html>
