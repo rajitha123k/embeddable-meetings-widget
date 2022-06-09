@@ -49,7 +49,7 @@ You can then instantiate the widget by providing the following parameters:
       height : "500px",
       layout : "Grid",
       inMeetingControls : ['mute-audio','leave-meeting'],
-      interstitialControls : 'join-meeting']});
+      interstitialControls : ['join-meeting']});
   </script>
 ```
 
